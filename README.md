@@ -1,11 +1,16 @@
 # clearhide
 A steganography tool that uses XOR in order to hide files. (Well, not exactly.)
 
-## Clearhide does not gurantee your data will be secure, as it depends on your disk device and your habits of using it!
+## A massive warning
+Clearhide does not gurantee your data will be secure, as it depends on your disk device and your habits of using it!
 
 ## A few tips for users
 Use a block device with high amounts of randomness (or entropy for the folks that get it)
 Do not use the same part of the block device to hide more than 1 file.
+
+## Building
+after cloning the repository, all you have to do is run `make build`
+
 
 ## Technicalities
 clearhide is just XORing a part of a block device (disk devices are called block devices on linux, clearhide works on any UNIX system) with the file you want to hide.
