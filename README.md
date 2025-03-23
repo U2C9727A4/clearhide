@@ -9,7 +9,13 @@ Use a block device with high amounts of randomness (or entropy for the folks tha
 Do not use the same part of the block device to hide more than 1 file.
 
 ## Building
+Requirements:
+A C compiler (Dosen't matter if its gcc or clang)
+a POSIX C library (So you're gonna have to be on a UNIX or UNIX-Like system, or with mingw on windows)
+GNU make (or any other `make` command) OPTIONAL
+
 after cloning the repository, all you have to do is run `make build`
+If you don't have `make`, all you have to do is run the command in the makefile yourself manually.
 
 
 ## Technicalities
